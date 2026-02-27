@@ -1,0 +1,163 @@
+/* ── Base ─────────────────────────────────────────── */
+body {
+  background: linear-gradient(160deg, #e8f0fe 0%, #f1f8ff 50%, #e3f2fd 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #1e293b;
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
+/* ── Navbar ────────────────────────────────────────── */
+.navbar {
+  background: linear-gradient(90deg, #0f172a 0%, #1e3a5f 100%) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  color: #e2e8f0 !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-brand img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.navbar .nav-link {
+  color: #cbd5e1 !important;
+  font-weight: 500;
+  padding: 0.45rem 0.85rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar .nav-link:hover {
+  background: rgba(255,255,255,0.12);
+  color: #ffffff !important;
+}
+
+.navbar .nav-link.active {
+  background: #0d6efd;
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+/* ── Hero Banner ───────────────────────────────────── */
+.octofit-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0d6efd 100%);
+  color: white;
+  padding: 2.2rem 1.5rem 1.8rem;
+  margin-bottom: 1.8rem;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 4px 16px rgba(13,110,253,0.25);
+}
+
+.octofit-hero h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.octofit-hero p {
+  color: #93c5fd;
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
+
+/* ── Cards ─────────────────────────────────────────── */
+.card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.card-header {
+  background: linear-gradient(90deg, #0d6efd, #0a58ca);
+  color: white;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.9rem 1.3rem;
+  border-bottom: none;
+}
+
+/* ── Tables ────────────────────────────────────────── */
+.table thead th {
+  background: linear-gradient(90deg, #1e3a5f, #2563eb);
+  color: #e2e8f0;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  padding: 0.85rem 1rem;
+  white-space: nowrap;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background 0.15s;
+}
+
+.table tbody tr:hover {
+  background-color: #dbeafe !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(219, 234, 254, 0.3);
+}
+
+.table td, .table th {
+  vertical-align: middle;
+  padding: 0.75rem 1rem;
+}
+
+/* ── Headings ──────────────────────────────────────── */
+h1, h2, h3, h4 {
+  color: #1e3a5f;
+  font-weight: 700;
+}
+
+/* ── Buttons ───────────────────────────────────────── */
+.btn-primary {
+  background: linear-gradient(90deg, #0d6efd, #0a58ca);
+  border: none;
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #0a58ca, #084298);
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #198754, #157347);
+  border: none;
+}
+
+/* ── Badges ─────────────────────────────────────────── */
+.badge {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* ── Spinner ─────────────────────────────────────────── */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
